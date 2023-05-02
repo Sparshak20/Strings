@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s = "Ab20CD1589Yxu"; // example alphanumeric string
+    int max_digit = -1; // initialize the maximum digit to -1
+
+    for (int i = 0; i < s.length(); i++) {
+        if (isdigit(s[i])) { // check if the current character is a digit
+            int digit = s[i] - '0'; // convert the character to its corresponding integer value
+            if (digit < 7 && digit > max_digit) { // check if the digit is less than 7 and greater than the current maximum digit
+                max_digit = digit; // update the maximum digit
+            }
+        }
+    }
+
+    if (max_digit == -1) { // check if no digit less than 7 was found
+        cout << "No digit less than 7 was found." << endl;
+    } else {
+        cout << "The largest digit less than 7 is " << max_digit << "." << endl;
+    }
+
+    return 0;
+}
