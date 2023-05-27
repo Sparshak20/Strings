@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+
 int main() {
     string s = "Ab20CD1589Yxu"; // example alphanumeric string
     int max_digit = -1; // initialize the maximum digit to -1
