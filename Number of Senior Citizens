@@ -8,6 +8,7 @@
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
+
 int countsenior(vector<string>& details) {
         int x=0;
         for(auto &i: details)
