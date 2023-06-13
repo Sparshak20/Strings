@@ -6,7 +6,6 @@
 // Determine count of passengers strictly over 60 years old.
 
 
-
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
